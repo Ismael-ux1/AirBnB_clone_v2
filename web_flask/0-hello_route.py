@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-# A script that starts a Flask web application.
+"""
+This script kicks off a Flask web app.
 
+The app will be reachable on 0.0.0.0, listening on port 5000.
+Routes:
+    /: Will show 'Hello HBNB!'
+"""
 from flask import Flask
-
 # Create a Flask application instance
 app = Flask(__name__)
 
@@ -15,4 +19,4 @@ def hello_hbnb():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
