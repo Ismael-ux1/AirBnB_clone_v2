@@ -39,17 +39,9 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
-    """
-    Returns a message.
-
-    When the user navigates to the /c/<text> directory,
-    (http://0.0.0.0:5000/c/<text>),
-
-    the message 'C <text>' will be displayed,
-    where <text> is replaced by the input text.
-    """
-    text = text.replace('_', '')
-    return "c {}".format(text)
+    """ Shows 'C' and the content of <text> """
+    text = text.replace("_", " ")
+    return "C {}".format(text)
 
 
 if __name__ == "__main__":
