@@ -51,10 +51,12 @@ def python_text(text):
     text = text.replace('_', ' ')
     return "Python {}".format(text)
 
+
 @app.route('/number/<int:n>', strict_slashes=False)
 def number_n(n):
     """ Shows a message stating that 'n' is a number """
     return "{} is a number".format(n)
+
 
 if __name__ == "__main__":
     # Starts the web server with host as 0.0.0.0 and port 5000
