@@ -12,6 +12,8 @@ Routes:
 
 # Creating an instance of the Flask web server
 from flask import Flask
+from flask import render_template
+
 app = Flask(__name__)
 
 
