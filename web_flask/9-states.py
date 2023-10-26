@@ -13,6 +13,7 @@ from models import storage
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
+
 # Route to display a list of states
 @app.route('/states')
 def states():
